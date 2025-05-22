@@ -1,41 +1,117 @@
-# 👋 Hi, I'm Dilla!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dilla's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f4f7;
+      color: #333;
+    }
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0077b6;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      text-decoration: none;
+      background-color: #0077b6;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      transition: background-color 0.2s;
+    }
+    .links a:hover {
+      background-color: #005f90;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
 
-I'm a Marine Information Systems student at Universitas Pendidikan Indonesia, passionate about technology, especially in project and product management, while staying rooted in the world of marine science and fisheries.
+  <header>
+    <h1>👋 Hi, I'm Dilla</h1>
+    <p>Marine Info Systems | Tech Enthusiast | Ocean Lover</p>
+  </header>
 
-As a fast-learning and adaptable generalist, I bring strong analytical skills to problem-solving. I'm experienced in marine data analysis, actively involved in research, and contribute to public relations organizations—sharpening my ability to collaborate across disciplines.
+  <div class="container">
 
----
+    <div class="profile">
+      <img src="dilla.jpg" alt="Dilla Photo" />
+      <div>
+        <p>
+          I am a Marine Information System student at Universitas Pendidikan Indonesia with a great interest in technology, especially in project and product management, in addition to my interest in marine and fisheries.
+        </p>
+        <p>
+          As a generalist, I enjoy learning new things, adapt quickly, and have good analytical skills in solving problems. I have experience in marine data analysis using various software, active in research activities, and contributing to organizations that focus on public relations.
+        </p>
+        <p>
+          This involvement strengthens my communication and collaboration skills in various cross-disciplinary teams. I am always open to new opportunities, both for collaboration and professional development.
+        </p>
+        <p>Contact me via LinkedIn or email to collaborate!</p>
+      </div>
+    </div>
 
-## 🔬 Projects & Research
+    <div class="card">
+      <h2>🧠 Projects</h2>
+      <ul>
+        <li><strong>Mapping Seagrass Ecosystem:</strong> Using Landsat 8 & SVM</li>
+        <li><strong>Coral Reef Fish Classification:</strong> MOGANET-T Model (90%+ accuracy)</li>
+      </ul>
+    </div>
 
-- **Mapping Seagrass Ecosystem Using Landsat 8 and SVM**  
-  Applied satellite time-series data and SVM algorithm for ecosystem classification.  
-  🔗 [Read Paper](#link-paper)
+    <div class="card links">
+      <h2>🌐 Connect with Me</h2>
+      <a href="https://instagram.com/dillamysr_" target="_blank">Instagram</a>
+      <a href="https://linkedin.com/in/dillamayasari" target="_blank">LinkedIn</a>
+      <a href="mailto:dillamaya2022@gmail.com">Email</a>
+      <a href="https://www.academia.edu/yourusername" target="_blank">Academia.edu</a>
+      <a href="https://kompas.id/yourakun" target="_blank">Kompas Profile</a>
+    </div>
 
-- **Coral Reef Fish Classification using MOGANET-T**  
-  Image classification project with lightweight model (<20M params), achieving over 90% accuracy.  
-  🔗 [GitHub Repo](#link-repo)
+  </div>
 
-- **NDVI Analysis with ArcGIS Pro**  
-  Spatial vegetation analysis for coastal monitoring.
+  <footer>
+    © 2025 Dilla Mayasari. Made with 💙 for tech & ocean.
+  </footer>
 
----
-
-## 👥 Organizational Experience
-
-- **Public Relations – [Nama Organisasi Kamu]**  
-  Coordinated campaigns, managed social media content, and built engagement across marine-focused communities.
-
----
-
-## 📎 Let's Connect
-
-- 📸 Instagram: [@dillamayy](https://instagram.com/dillamysr_)  
-- 💼 LinkedIn: [linkedin.com/in/namakamu](https://linkedin.com/in/dillamayasari)  
-- 📄 Blog / Medium: [yourblog.medium.com](#) *(optional)*  
-- 🧠 Notion Portfolio: [notion.site/dilla](#) *(optional)*  
-
----
-
-> 🌱 Always learning. Always exploring. Both the oceans and new ideas.
-
+</body>
+</html>
