@@ -1,75 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dilla's Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    p {
-      line-height: 1.6;
-    }
-    a {
-      color: #0077b5;
-      text-decoration: none;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 10px 0;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dilla Mayasari - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0056b3; /* Darker blue for accents */
+            --secondary-color: #007bff; /* Original blue */
+            --text-color: #333;
+            --bg-color: #f8f9fa; /* Lighter background */
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to top for longer content */
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .cta-text {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between items */
+            margin-top: 30px;
+        }
+
+        .social-links li {
+            margin: 0; /* Remove default margin */
+        }
+
+        .social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.1em;
+            border: 1px solid var(--border-color);
+            background-color: var(--card-bg);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .social-links a i {
+            font-size: 1.3em;
+        }
+
+        .projects-section {
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        .project-item {
+            background-color: #f0f8ff; /* Light blue background for projects */
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .project-item h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .project-item p {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .project-item .technologies {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        .project-item .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid var(--secondary-color);
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .project-item .project-link:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://via.placeholder.com/150" alt="dilla.jpg" />
-    <h1>Hi, I’m Dilla! 👋</h1>
-    <p>
-      I am a Marine Information System student at Universitas Pendidikan Indonesia
-      with a great interest in technology, especially in project and product management,
-      in addition to my interest in marine and fisheries.
-    </p>
-    <p>
-      As a generalist, I enjoy learning new things, adapt quickly, and have good analytical skills.
-      I have experience in marine data analysis, am active in research, and involved in public relations organizations.
-    </p>
-    <p>
-      I’m always open to collaboration and professional development.
-      Feel free to connect with me below!
-    </p>
-    <ul>
-      <li><a href="https://instagram.com/dillamysr_" target="_blank">Instagram</a></li>
-      <li><a href="https://linkedin.com/in/dillamayasari" target="_blank">LinkedIn</a></li>
-      <li><a href="mailto:dillamaya2022@gmail.com">Email Me</a></li>
-      <li><a href="https://www.academia.edu/your_username" target="_blank">Academia Profile</a></li>
-      <li><a href="https://www.kompas.id/author/your_username" target="_blank">Kompas Articles</a></li>
-    </ul>
-  </div>
+    <div class="container">
+        <img src="https://via.placeholder.com/180/007bff/ffffff?text=Dilla" alt="Dilla Mayasari" class="profile-img" />
+        <h1>Hi, I’m Dilla Mayasari! 👋</h1>
+        <p>
+            Saya adalah mahasiswa **Sistem Informasi Kelautan** di Universitas Pendidikan Indonesia.
+            Saya memiliki minat besar pada **teknologi**, terutama di bidang **manajemen proyek dan produk**,
+            selain kecintaan saya terhadap sektor **kelautan dan perikanan**.
+        </p>
+        <p>
+            Sebagai seorang generalis, saya menikmati mempelajari hal-hal baru, cepat beradaptasi, dan memiliki
+            kemampuan analisis yang baik. Saya memiliki pengalaman dalam **analisis data kelautan**, aktif dalam
+            **penelitian**, dan terlibat dalam organisasi **hubungan masyarakat**.
+        </p>
+        <p class="cta-text">
+            Saya selalu terbuka untuk kolaborasi dan pengembangan profesional. Mari terhubung!
+        </p>
+
+        <h2>Connect with Me</h2>
+        <ul class="social-links">
+            <li><a href="https://instagram.com/dillamysr_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://linkedin.com/in/dillamayasari" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+            <li><a href="mailto:dillamaya2022@gmail.com"><i class="fas fa-envelope"></i> Email Me</a></li>
+            <li><a href="https://www.academia.edu/your_username" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Academia Profile</a></li>
+            <li><a href="https://www.kompas.id/author/your_username" target="_blank" rel="noopener noreferrer"><i class="fas fa-newspaper"></i> Kompas Articles</a></li>
+            <li><a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
+
+        <div class="projects-section">
+            <h2>My Projects & Contributions</h2>
+            <div class="project-item">
+                <h3>Proyek Analisis Data Kelautan [Nama Proyek 1]</h3>
+                <p>Deskripsi singkat tentang proyek ini, fokus pada peranmu dan hasil yang dicapai. Misalnya, "Menganalisis data satelit untuk memetakan distribusi suhu permukaan laut di wilayah X, yang digunakan untuk mengidentifikasi potensi daerah penangkapan ikan."</p>
+                <p class="technologies">**Tech/Tools:** Python (Pandas, Matplotlib), QGIS, Data Kelautan</p>
+                <a href="https://github.com/your-github-username/nama-repo-proyek-1" target="_blank" class="project-link">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="project-item">
+                <h3>Studi Kasus Manajemen Produk [Nama Proyek 2]</h3>
+                <p>Jelaskan proyek ini, mungkin studi kasus atau simulasi yang berkaitan dengan manajemen produk. "Mengembangkan road map produk untuk aplikasi pemantauan biota laut, meliputi riset pengguna, perumusan fitur, dan prioritas backlog."</p>
+                <p class="technologies">**Tech/Tools:** Figma, Jira (atau tool PM lainnya), Metodologi Agile</p>
+                <a href="https://github.com/your-github-username/nama-repo-proyek-2" target="_blank" class="project-link">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="project-item">
+                <h3>Kontribusi Penelitian/Publikasi [Nama Proyek 3]</h3>
+                <p>Cantumkan publikasi atau penelitian yang kamu ikuti. "Berpartisipasi dalam penelitian tentang dampak mikroplastik terhadap ekosistem mangrove di pesisir, mengumpulkan dan menganalisis sampel."</p>
+                <p class="technologies">**Keywords:** Penelitian Lingkungan, Data Saintifik, Pelaporan</p>
+                <a href="https://www.academia.edu/link_ke_publikasi_ini" target="_blank" class="project-link">Baca Publikasi <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            </div>
+    </div>
 </body>
 </html>
