@@ -30,8 +30,8 @@ As a fast-learning and adaptable generalist, I bring strong analytical skills to
 
 ## 📎 Let's Connect
 
-- 📸 Instagram: [@dillamayy](https://instagram.com/dillamayy)  
-- 💼 LinkedIn: [linkedin.com/in/namakamu](https://linkedin.com/in/namakamu)  
+- 📸 Instagram: [@dillamayy](https://instagram.com/dillamysr_)  
+- 💼 LinkedIn: [linkedin.com/in/namakamu](https://linkedin.com/in/dillamayasari)  
 - 📄 Blog / Medium: [yourblog.medium.com](#) *(optional)*  
 - 🧠 Notion Portfolio: [notion.site/dilla](#) *(optional)*  
 
