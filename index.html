@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dilla Mayasari - Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     :root {
       --primary: #007bff;
@@ -14,66 +14,143 @@
       --white: #ffffff;
       --shadow: rgba(0, 0, 0, 0.08);
     }
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  color: var(--text);
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px;
-  background:
-    linear-gradient(to bottom right, #e0f7ff, #ffffff),
-    url('images/pattern.svg');
-  background-repeat: no-repeat, repeat;
-  background-size: cover, 300px;
-}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(to bottom right, #e0f7ff, #ffffff),
+        url('images/pattern.svg');
+      background-repeat: no-repeat, repeat;
+      background-size: cover, 300px;
+    }
 
-.container {
-  max-width: 900px;
-  width: 100%;
-  background: var(--white);
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px var(--shadow);
-}
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: var(--white);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px var(--shadow);
+    }
 
-.profile-img {
-  display: block;
-  margin: auto;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid var(--primary);
-}
+    .profile-img {
+      display: block;
+      margin: auto;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+    }
 
-h1 {
-  text-align: center;
-  font-size: 2.6em;
-  background: linear-gradient(to right, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-top: 20px;
-}
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 20px;
+    }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.7;
-  margin-top: 20px;
-}
+    p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin-top: 20px;
+    }
 
-.cta-text {
-  margin-top: 30px;
-  font-weight: bold;
-  font-size: 1.1em;
-  color: var(--secondary);
-  text-align: center;
-}
+    .cta-text {
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: var(--secondary);
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 8px;
+    }
+
+    /* Styling social links */
+    .social-links {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .social-links a {
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1.5px solid var(--secondary);
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 1em;
+    }
+    .social-links a:hover {
+      background-color: var(--secondary);
+      color: var(--white);
+    }
+
+    /* Projects section */
+    .projects-section {
+      margin-top: 40px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project-item {
+      background: #f5f7fa;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px var(--shadow);
+    }
+
+    .project-item h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .technologies {
+      font-style: italic;
+      color: var(--secondary);
+      margin: 10px 0;
+    }
+
+    .project-link {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 10px;
+      transition: color 0.3s;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+      color: var(--secondary);
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="fotodilla.jpg" alt="Dilla Mayasari" class="profile-img"/>
+    <img src="fotodilla.jpg" alt="Dilla Mayasari" class="profile-img" />
     <h1>Hi, I’m Dilla Mayasari! 👋</h1>
     <p>
       A fast-learning and highly adaptable generalist with strong analytical thinking and problem-solving skills. Experienced in marine data analysis, satellite imagery processing, and geographic information systems (GIS) using ArcGIS, QGIS, and Python. Actively involved in multidisciplinary research projects related to coastal and marine ecosystems, including sea surface temperature monitoring and spatial modeling to support marine conservation.
@@ -86,48 +163,46 @@ p {
 
     <h2>Connect with Me</h2>
     <div class="social-links">
-      <a href="https://instagram.com/dillamysr_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://linkedin.com/in/dillamayasari" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://instagram.com/dillamysr_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://linkedin.com/in/dillamayasari" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a href="mailto:dillamaya2022@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-      <a href="https://independent.academia.edu/DillaMayasari1" target="_blank"><i class="fas fa-graduation-cap"></i> Academia</a>
-      <a href="https://www.kompas.id/bdillamayasari6762" target="_blank"><i class="fas fa-newspaper"></i> Kompas</a>
-      <a href="https://github.com/dillamay" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://independent.academia.edu/DillaMayasari1" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Academia</a>
+      <a href="https://www.kompas.id/bdillamayasari6762" target="_blank" rel="noopener noreferrer"><i class="fas fa-newspaper"></i> Kompas</a>
+      <a href="https://github.com/dillamay" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
     </div>
 
     <!-- Bagian tambahan -->
-   <h2>Education</h2>
-<div style="display: flex; align-items: center; gap: 10px;">
-  <img src="logoupi.jpg" alt="UPI Logo" style="height: 50px;">
-  <p>
-    I am currently pursuing a degree in <strong>Sistem Informasi Kelautan</strong> (Marine Information Systems) at 
-    <strong>Universitas Pendidikan Indonesia (UPI)</strong>. My studies focus on the integration of technology, data science, 
-    and marine sciences to address challenges in coastal and ocean environments.
-  </p>
-</div>
-
-<h2>Organizational Experience</h2>
-<ul>
-  <li>
-    <strong>Jun 2024 – Dec 2024</strong><br>
-    <strong>Bendahara Departemen Hubungan Masyarakat dan Multimedia</strong> – Himpunan Mahasiswa Sistem Informasi Kelautan<br>
-   <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 5px;">
-  <img src="kegiatan1.jpg" alt="Kegiatan 1" style="width: auto; height: 100px; object-fit: cover; border-radius: 8px;">
-  <img src="kegiatan2.jpg" alt="Kegiatan 2" style="width: auto; height: 100px; object-fit: cover; border-radius: 8px;">
-  <img src="kegiatan3.jpg" alt="Kegiatan 3" style="width: auto; height: 100px; object-fit: cover; border-radius: 8px;">
-</div>
-
-  </li>
-
-  <li style="margin-top: 20px;">
-    <strong>Feb 2023 – Feb 2024</strong><br>
-    <strong>Staff Hubungan Masyarakat</strong>, Ketua Pelaksana Studi Banding Ilmu<br>
-    <div style="display: flex; gap: 10px; margin-top: 5px;">
-      <img src="studi1.jpg" alt="Studi Banding 1" style="width: auto; height: 100px; object-fit: cover; border-radius: 8px;">
-      <img src="studi2.jpg" alt="Studi Banding 2" style="width: auto; height: 100px; object-fit: cover; border-radius: 8px;">
+    <h2>Education</h2>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="logoupi.jpg" alt="UPI Logo" style="height: 50px;" />
+      <p>
+        I am currently pursuing a degree in <strong>Sistem Informasi Kelautan</strong> (Marine Information Systems) at
+        <strong>Universitas Pendidikan Indonesia (UPI)</strong>. My studies focus on the integration of technology, data science,
+        and marine sciences to address challenges in coastal and ocean environments.
+      </p>
     </div>
-  </li>
-</ul>
 
+    <h2>Organizational Experience</h2>
+    <ul>
+      <li>
+        <strong>Jun 2024 – Dec 2024</strong><br />
+        <strong>Bendahara Departemen Hubungan Masyarakat dan Multimedia</strong> – Himpunan Mahasiswa Sistem Informasi Kelautan
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 5px;">
+          <img src="kegiatan1.jpg" alt="Kegiatan 1" style="height: 100px; object-fit: cover; border-radius: 8px;" />
+          <img src="kegiatan2.jpg" alt="Kegiatan 2" style="height: 100px; object-fit: cover; border-radius: 8px;" />
+          <img src="kegiatan3.jpg" alt="Kegiatan 3" style="height: 100px; object-fit: cover; border-radius: 8px;" />
+        </div>
+      </li>
+
+      <li style="margin-top: 20px;">
+        <strong>Feb 2023 – Feb 2024</strong><br />
+        <strong>Staff Hubungan Masyarakat</strong>, Ketua Pelaksana Studi Banding Ilmu
+        <div style="display: flex; gap: 10px; margin-top: 5px;">
+          <img src="studi1.jpg" alt="Studi Banding 1" style="height: 100px; object-fit: cover; border-radius: 8px;" />
+          <img src="studi2.jpg" alt="Studi Banding 2" style="height: 100px; object-fit: cover; border-radius: 8px;" />
+        </div>
+      </li>
+    </ul>
 
     <div class="projects-section">
       <h2>My Projects & Contributions</h2>
@@ -136,19 +211,19 @@ p {
           <h3>Analisis Data Kelautan</h3>
           <p>Menganalisis data satelit untuk memetakan suhu permukaan laut di wilayah X guna mengidentifikasi potensi daerah penangkapan ikan.</p>
           <div class="technologies">Python, Matplotlib, QGIS, Data Kelautan</div>
-          <a href="https://github.com/your-github-username/nama-repo-proyek-1" class="project-link" target="_blank">Lihat Proyek</a>
+          <a href="https://github.com/your-github-username/nama-repo-proyek-1" class="project-link" target="_blank" rel="noopener noreferrer">Lihat Proyek</a>
         </div>
         <div class="project-item">
           <h3>Studi Kasus Manajemen Produk</h3>
           <p>Mengembangkan roadmap aplikasi monitoring biota laut, mulai dari riset pengguna hingga perumusan fitur dan backlog.</p>
           <div class="technologies">Figma, Jira, Agile</div>
-          <a href="https://github.com/your-github-username/nama-repo-proyek-2" class="project-link" target="_blank">Lihat Proyek</a>
+          <a href="https://github.com/your-github-username/nama-repo-proyek-2" class="project-link" target="_blank" rel="noopener noreferrer">Lihat Proyek</a>
         </div>
         <div class="project-item">
           <h3>Kontribusi Penelitian</h3>
           <p>Penelitian mikroplastik dan ekosistem mangrove, mulai dari pengumpulan hingga analisis data sampel lingkungan.</p>
           <div class="technologies">Penelitian Lingkungan, Data Saintifik</div>
-          <a href="https://www.academia.edu/link_ke_publikasi_ini" class="project-link" target="_blank">Baca Publikasi</a>
+          <a href="https://www.academia.edu/link_ke_publikasi_ini" class="project-link" target="_blank" rel="noopener noreferrer">Baca Publikasi</a>
         </div>
       </div>
     </div>
